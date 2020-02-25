@@ -29,10 +29,10 @@ def find_min_value(array)
   min = array[0]
   
   array.length.times do |curr_index| 
-    if (array[curr_index] == value_to_find)
-      return curr_index
+    if (array[curr_index] < min)
+      min = array[curr_index]
     end
   end
-  newarr = array.sort
-  return newarr[0]
+  
+  return min
 end
