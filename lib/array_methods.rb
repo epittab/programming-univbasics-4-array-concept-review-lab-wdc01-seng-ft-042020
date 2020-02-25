@@ -1,5 +1,5 @@
 def find_element_index(array, value_to_find)
-  array.length.times |curr_index| do
+  array.length.times do |curr_index| 
     if (array[curr_index] == value_to_find)
       return curr_index
     end
